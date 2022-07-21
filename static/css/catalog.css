@@ -1,0 +1,330 @@
+/*-------------
+PRODUCT HEADER
+--------------*/
+
+.product-header {
+    padding-bottom: 8px;
+}
+
+
+/*large devices (lg) */
+
+@media (min-width: 992px) {
+    .product-head {
+        margin: 0px 7px 0px 27px;
+    }
+}
+
+.product-header h3 {
+    text-transform: capitalize;
+    margin: 0;
+}
+
+.product-header-items h5 {
+    margin: 0;
+    margin: 4px 0px;
+}
+
+
+/* Boostrap Overwride */
+
+.form-overwride .form-select {
+    border-radius: var(--brd-radius-1);
+    border-color: var(--clr-grey-5);
+}
+
+.form-overwride .form-select:hover {
+    border-color: var(--clr-grey-2);
+}
+
+.form-overwride .form-select:focus {
+    box-shadow: none;
+    border-color: var(--clr-grey-2);
+}
+
+.form-overwride .select-selected {
+    background-color: rgb(255, 30, 150);
+}
+
+select.decorated option:hover {
+    box-shadow: 0 0 10px 100px #07232e inset;
+    background-color: burlywood;
+}
+
+
+/*---------------
+PRODUCT LİST 
+---------------*/
+
+.row-flex {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 7px;
+}
+
+.product-col {
+    padding: 7px;
+}
+
+
+/*large devices (lg) */
+
+@media (min-width: 992px) {
+    .row-flex {
+        margin: 0px 0px;
+    }
+    .product-col {
+        padding: 0px 0px 20px 20px;
+    }
+}
+
+.product-card {
+    overflow: hidden;
+    height: 100% !important;
+    border: none;
+    border-radius: var(--brd-radius-1);
+    transition: 0.1s;
+    transition-timing-function: ease-in-out;
+}
+
+
+/*large devices (lg) */
+
+@media (min-width: 992px) {
+    .product-card:hover {
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+    }
+}
+
+.w-100-important {
+    height: 100% !important;
+}
+
+.card-image-group {
+    background-color: var(--clr-white);
+    position: relative;
+    width: 100%;
+    aspect-ratio: 3 / 4;
+    object-fit: scale-down;
+}
+
+.product-image {
+    border-radius: var(--brd-radius-1);
+    position: absolute;
+    width: 100%;
+    aspect-ratio: 3 / 4;
+    object-fit: cover;
+}
+
+.card-image-group img {
+    background: var(--clr-white);
+}
+
+.second-img {
+    opacity: 0;
+    transition: 0.1s;
+    transition-timing-function: ease-in-out;
+    object-fit: scale-down;
+}
+
+.product-card:hover .card-image-group .second-img {
+    opacity: 1;
+}
+
+.new-text::before {
+    position: relative;
+    top: -5px;
+    display: inline-block;
+    width: 20px;
+    height: 1px;
+    margin: 0 10px;
+    content: '';
+    background: #ccc;
+}
+
+.new-text::after {
+    position: relative;
+    top: -5px;
+    display: inline-block;
+    width: 20px;
+    height: 1px;
+    margin: 0 10px;
+    content: '';
+    background: #ccc;
+}
+
+.card-title {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.card-body a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+}
+
+
+/*small devices (sm) */
+
+@media (min-width: 576px) {
+    .new-text::before {
+        width: 30px;
+    }
+    .new-text::after {
+        width: 30px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .new-text::before {
+        width: 60px;
+    }
+    .new-text::after {
+        width: 60px;
+    }
+}
+
+.product-card-icon {
+    width: 30px;
+    height: auto;
+    margin: 0px 8px;
+}
+
+
+/*----------
+PAGINATION
+-----------*/
+
+
+/* Boostrap Overwrite */
+
+.page-link {
+    position: relative;
+    display: block;
+    color: var(--clr-grey-3);
+    box-shadow: none;
+    border-radius: 50%;
+    text-decoration: none;
+    background-color: #fff;
+    border: none;
+    transition: none;
+    transform: none;
+}
+
+.page-link:focus {
+    color: var(--clr-grey-3);
+    border-color: none;
+    box-shadow: 0 0 0 0;
+}
+
+.page-link:hover {
+    color: var(--clr-grey-1);
+}
+
+.page-item.active .page-link {
+    z-index: 3;
+    color: #fff;
+    background-color: var(--clr-grey-2);
+    border-color: var(--clr-grey-2);
+    border-radius: 50%;
+    box-shadow: none;
+}
+
+.page-item:last-child .page-link {
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+}
+
+.page-item:first-child .page-link {
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+}
+
+
+/* Overwrite end */
+
+
+/*---------
+FILTERS COL
+-----------*/
+
+.empty-div {
+    height: 20px;
+}
+
+.filter-title {
+    color: var(--clr-grey-3);
+    text-transform: capitalize;
+    text-decoration: none;
+    padding: 8px;
+}
+
+.filter-title h5 {
+    margin: 0;
+    font-weight: bold;
+}
+
+.filter-main-title {
+    color: var(--clr-grey-3);
+    text-transform: capitalize;
+    text-decoration: none;
+    text-transform: capitalize;
+    margin: 0;
+}
+
+.filter-main-title h5 {
+    margin: 0;
+}
+
+.filter-main-title-sm {
+    font-size: 16px;
+}
+
+
+/* Boostrap Override */
+
+.form-check {
+    padding: 0px 0px 0px 32px;
+}
+
+.form-check-input {
+    border-color: var(--clr-grey-3);
+    cursor: pointer;
+}
+
+.form-check-input:hover {
+    background-color: var(--clr-grey-6);
+}
+
+.form-check-input:checked {
+    background-color: var(--clr-grey-2);
+    border-color: var(--clr-grey-2);
+}
+
+.form-check-input:focus {
+    box-shadow: none;
+    border-color: var(--clr-grey-3);
+}
+
+.form-check-label {
+    cursor: pointer;
+    text-transform: capitalize;
+}
+
+.custom-checkbox {
+    color: var(--clr-grey-2);
+}
+
+
+/*large devices (lg) */
+
+@media (min-width: 992px) {
+    .filter-title:hover {
+        border-radius: var(--brd-radius-1);
+        background-color: var(--clr-grey-6);
+    }
+}
