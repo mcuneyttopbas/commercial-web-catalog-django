@@ -1,0 +1,157 @@
+{% load static %}
+
+<div class="row flex-row-reverse">
+    <!-- Sort Title Collum -->
+    <div class="col-4 col-sm-6">
+        <a href="#sortcollapse" class="filter-main-title   d-flex justify-content-between align-items-center d-lg-none" id="sort-main-title" onclick="sortcollapse()" data-bs-toggle="collapse">
+            <h5>Sort</h5>
+            <h5><i id="sort-js" class="bi bi-chevron-down"></i></h5>
+        </a>
+    </div>
+    <!-- Filter Title Collum -->
+    <div class="col-8 col-sm-6">
+        <!-- Small Screen Filter Title -->
+        <a href="#advancedSearch" class="filter-main-title d-flex justify-content-between align-items-center d-lg-none" id="filter-main-title" onclick="advancedsearch()" data-bs-toggle="collapse">
+            <h5>advanced search</h5>
+            <h5><i id="advanced-js" class="bi bi-chevron-down"></i></h5>
+        </a>
+    </div>
+</div>
+<form method="GET" action="." class="filter-form">
+    <div class="row">
+        <!-- Sort Elements -->
+        <div class="col-12">
+            <div id="sortcollapse" class="collapse"> 
+                <!-- Sort İtem -->
+                <div class="empty-div"></div>
+                
+                    <select class="form-select"  id="sort" name="sort">
+                        <option value="featured">Featured</option>
+                        <option value="productName">Name: A to Z</option>
+                        <option value="-productName">Name: Z to A</option>
+                        <option value="width">Width: Low to High</option>
+                        <option value="newest">Newest</option>
+                    </select>
+                
+            </div>
+        </div>
+
+    <!-- Filter Elements -->
+    <!--!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! 
+    Collapse icon elementleri basmaya odaklı class odaklıya çevrilecek
+    !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!-->
+    <div class="col-12">
+        <!-- Large Screen Filter Title -->
+        <h4 class="d-none d-lg-block d-xl-block filter-main-title">advanced search</h4>
+
+        <!-- Usage Div -->
+        <div id="advancedSearch" class="collapse mt-2"> 
+            
+                <!-- Usage Title -->
+                <a href="#usage" class="filter-title d-flex justify-content-between align-items-center" onclick="usage()" data-bs-toggle="collapse">
+                    <h5>usage</h5>
+                    <h5><i id="usage-js" class="bi bi-chevron-up"></i></h5>
+                </a>
+
+                <!-- Usage Div -->
+                <div id="usage" class="collapse show mt-2"> 
+                    <!-- Usage İtem -->
+                    
+                        {% for usage in usages %}
+                            <div class="form-check">
+                                <input class="form-check-input custom-checkbox" type="checkbox" name="{{usage.name}}" id="checkbox" >
+                                <label class="form-check-label" for="{{usage.name}}">
+                                    {{usage.name}}
+                                </label>
+                            </div>
+                        {% endfor %}
+                        <button style="display: none;" id="btn" type="submit"></button>
+                
+                </div>
+
+                <!-- Type Title -->
+                <a href="#type" class="filter-title d-flex justify-content-between align-items-center mt-2" onclick="filtertype()" data-bs-toggle="collapse">
+                    <h5>Composition</h5>
+                    <h5><i id="type-js" class="bi bi-chevron-up"></i></h5>
+                </a>
+
+                <!-- Type Div -->
+                <div id="type" class="collapse show mt-2"> 
+                    <!-- Type İtem -->
+                   
+                    {% for composition in compositions %}
+                        <div class="form-check">
+                            <input class="form-check-input custom-checkbox" type="checkbox" name="{{composition.name}}" id="checkbox" >
+                            <label class="form-check-label" for="{{composition.name}}">
+                                {{composition.name}}
+                            </label>
+                        </div>
+                    {% endfor %}
+                    <button style="display: none;" id="btn" type="submit"></button>
+                
+                </div>
+
+                <!-- Feature Title -->
+                <a href="#width" class="filter-title d-flex justify-content-between align-items-center mt-2" onclick="width()" data-bs-toggle="collapse">
+                    <h5>Features</h5>
+                    <h5><i id="width-js" class="bi bi-chevron-up"></i></h5>
+                </a>
+
+                <!-- Feature Div -->
+                <div id="width" class="collapse show mt-2">
+                    <!-- Feature İtem -->
+                
+                    {% for feature in features %}
+                        <div class="form-check">
+                            <input class="form-check-input custom-checkbox" type="checkbox" name="{{feature.name}}" id="checkbox" >
+                            <label class="form-check-label" for="{{feature.name}}">
+                                {{feature.name}}
+                            </label>
+                        </div>
+                    {% endfor %}
+                    <button style="display: none;" id="btn" type="submit"></button>
+                
+                </div>
+
+                <a href="#width" class="filter-title d-flex justify-content-between align-items-center mt-2" onclick="width()" data-bs-toggle="collapse">
+                    <h5>Width</h5>
+                    <h5><i id="width-js" class="bi bi-chevron-up"></i></h5>
+                </a>
+
+                <div id="width" class="collapse show mt-2">
+                    <!-- Width İtem -->
+                    
+                    <div class="form-check">
+                        <input class="form-check-input custom-checkbox width-check" type="checkbox" id="checkbox" name="gte300">
+                        <label class="form-check-label" for="">
+                            More than 300cm
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input custom-checkbox width-check" type="checkbox" id="checkbox" name="gte280" >
+                        <label class="form-check-label" for="">
+                            More than 280cm
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input custom-checkbox width-check" type="checkbox" id="checkbox" name="lt160" >
+                        <label class="form-check-label" for="less160">
+                            Less than 160cm
+                        </label>
+                    </div>
+                </div>
+                <button style="display: none;" id="btn" type="submit"></button>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+
+<script>
+
+
+
+
+</script>
+

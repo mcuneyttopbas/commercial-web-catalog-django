@@ -1,0 +1,26 @@
+{% load static %}
+
+<div class="product-head">
+    <hr class="d-lg-none">
+    <div class="product-header d-flex justify-content-between align-content-center ">
+        <h3>product finder</h3>
+        <div class="product-header-items d-flex d-inline-flex  align-content-between">
+            <h5 class="mx-3">result ({{count}})</h5>
+            <form action="."  class="form-overwride d-none d-lg-block" >
+                <select class="form-select  form-select-sm"  id="sort2" name="sort2" >
+                    <option value="featured" >Featured</option>
+                    <option value="productName">Name: A to Z</option>
+                    <option value="-productName">Name: Z to A</option>
+                    <option value="width">Width: Low to High</option>
+                    <option value="newest">Newest</option>
+                </select>
+            </form>
+        </div>
+    </div>
+    <div>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati voluptatibus, et omnis magnam quo placeat. 
+            Voluptatem eius, qui molestias fugiat velit veniam voluptates mollitia officia, non, architecto possimus quia obcaecati.
+        </p>
+    </div>
+    <hr>
+</div>

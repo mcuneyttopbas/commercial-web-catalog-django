@@ -1,0 +1,11 @@
+{% load static %}
+
+<nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="{% url 'index' %}">Home</a></li>
+      <li class="breadcrumb-item"><a href="{% url 'catalog' %}">{{ request.path }}</a></li>
+
+
+    </ol>
+</nav>
+

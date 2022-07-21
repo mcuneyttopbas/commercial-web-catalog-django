@@ -1,0 +1,125 @@
+{% load static %}
+
+
+
+<header>
+
+  <!-- Top Navbar (Enable in lg and xl screen) -->
+  <nav class="navbar d-block navbar-expand-md nav-top d-none d-sm-none d-md-block">
+    <div class="container">
+      
+      <!-- Out Links (Enable in lg and xl screen) -->
+      <ul class="navbar-nav me-auto">
+        {% if sub_links %}
+          {% for link in sub_links %}
+            {% if link.isActive == True %}
+            <li class="nav-item">
+                <a class="nav-link top-nav-link" href="{{link.url}}">{{link.name}}</a>
+            </li>
+            {% endif %} 
+          {% endfor %}
+        {% endif %}  
+      </ul>
+
+      <div class="justify-content-end d-flex align-item-center">
+      
+        <!-- Top Navbar Search bar (Enable in lg and xl screen) -->
+        <form class="navbar-form " method="GET" role="search"> 
+          <div class="input-group input-group-sm nav-search">
+            <input type="text" class="form-control" name="search" id="search"  placeholder="Search on Products..." aria-label="search" aria-describedby="button-addon2">
+            <button class="btn btn-outline-grey-1" type="submit" ><i class="fas fa-search"></i></button>
+          </div>
+        </form>
+        
+        <!-- Language select (Enable in lg and xl screen) -->
+        <div class="form-group bg-none me-auto">       
+          <select name="language" id="language" class="border-none bg-none">
+              <option value="0">EN</option>
+              <option value="1">TR</option>
+
+          </select>
+        </div>
+      </div>
+    </div>
+
+  </nav>
+
+  <!-- Bottom Navbar -->
+  <nav class="navbar navbar-expand-md navbar-light nav-bottom navbar-ani">
+    <div class="container">
+      <!-- Web Site Logo -->
+      <a class="" href=""><img class="navbar-logo" src="{% static 'img/logo.svg' %}" alt=""></a>
+
+      <!-- Toogle Button (Enable in xs,sm and md screen) -->
+      <button 
+      class="navbar-toggler justify-content-end" 
+      type="button" 
+      data-parent="acordion"
+      data-bs-toggle="collapse" 
+      data-bs-target="#navbarNav" 
+      aria-controls="navbarNav" 
+      aria-expanded="false" 
+      aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      
+      <!-- Navbar İtem -->
+
+       <!-- Small Screen Searchbar -->
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <div class="mt-2 d-block d-sm-block d-md-none">
+          <form class="navbar-form " method="GET" role="search"> 
+            <div class="input-group nav-search">
+              <input type="text" class="form-control" name="search" placeholder="Search on Products..." aria-label="search" aria-describedby="button-addon2">
+              <button class="btn btn-outline-secondary btn-outline-grey-1" type="submit" ><i class="fas fa-search"></i></button>
+            </div>
+          </form>
+        </div>
+
+        <!-- Main Links -->
+        <ul class="navbar-nav ">
+          <li><hr class="dropdown-divider"></li>
+          <li class="nav-item">
+            <!-- Hakkında -->
+              <a class="nav-link" href="">Hakkında</a>
+          </li>
+          <li class="nav-item">
+            <!-- Koleksiyon -->
+              <a class="nav-link" href="">Koleksiyon</a>
+          </li>
+          <li class="nav-item">
+            <!-- Tarihçe -->
+              <a class="nav-link" href="">Tarihçe</a>
+          </li>
+          <li class="nav-item">
+            <!-- Giriş -->
+              <a class="nav-link" href="">Giriş</a>
+          </li>
+          <li><hr class="dropdown-divider"></li>
+        </ul>
+        <!-- Top Navbar links (Enable in xs,sm and md screen) -->
+        <ul class="navbar-nav d-block d-sm-block d-md-none">
+          {% if sub_links %}
+            {% for link in sub_links %}
+              {% if link.isActive == True %}
+                <li class="nav-item">
+                    <a class="nav-link top-nav-link" href="{{link.url}}">{{link.name}}</a>
+                </li>
+                {% endif %} 
+            {% endfor %}
+          {% endif %}  
+          <li><hr class="dropdown-divider"></li>
+        </ul>  
+        <!-- Language select -->
+        <div class="form-group bg-none justify-content-end d-block d-sm-block d-md-none">       
+          <select name="language" id="language-sm" class="border-none bg-none">
+              <option value="0">EN</option>
+              <option value="1">TR</option>
+  
+          </select>
+        </div>        
+      </div>
+    </div>
+  </nav>
+</header>

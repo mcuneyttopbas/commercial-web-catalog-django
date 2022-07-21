@@ -1,0 +1,51 @@
+{% load static %}
+
+
+<div class="col-6 col-md-4 product-col">
+  
+  <div class="card product-card">
+
+    <!-- Card Image Part -->
+    <div class="card-image-group">
+      <img class="card-img-top product-image" src="{{product.main_image.url}}" alt="Card image cap">
+      {% if product.style_image %}
+        <img class="card-img-top product-image second-img" src="{{product.style_image.url}}" alt="Card image cap">
+      {% endif %}
+    </div>
+
+      <!-- Product Info Card Body -->
+      <div class="card-body text-center">
+
+        <!-- NEW info -->
+        {% if product.is_new %}
+          <p class="card-text new-text">new</p>
+        {% else %}
+          <p class="card-text new-text invisible">new</p>
+        {% endif %}
+
+        <!-- Product Name -->
+        <h5 class="card-title">{{product.name}}</h5>
+
+        <!-- Product Color Number -->
+        <p class="card-text">5 color</p>
+
+        <!-- Product Card Link -->
+        <a href="{% url 'product_details' product.slug %}"></a>
+
+        <!-- Card Feature Icon -->
+        <div class="w-100 d-flex justify-content-center">
+        {% for composition in product.compositions.all %}
+            {% if composition.icon %}
+              <img class="product-card-icon" src="/images/{{composition.icon}}" alt="">
+            {% endif %}
+        {% endfor %}
+
+        {% for feature in product.features.all %}
+            {% if feature.icon %}
+              <img class="product-card-icon" src="/images/{{feature.icon}}" alt="">
+            {% endif %}
+        {% endfor %}
+        </div>
+      </div>
+  </div>
+</div>

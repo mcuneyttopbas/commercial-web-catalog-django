@@ -1,0 +1,106 @@
+{% load static %}
+
+<!-- Footer -->
+<footer class=" text-lg-start text-grey-2 bg-grey-6">
+    <!-- Grid container -->
+    <div class="container pt-4 pb-0">
+    
+        
+        <!--Grid row-->
+        <div class="row">
+        <!-- Grid column -->
+            <div class="col-md-12 col-lg-3 col-xl-3 mt-3">
+                <img class="footer-logo mb-3 ps-0" src="{% static 'img/logo.svg' %}" alt="">
+                <p>
+                {{settings.paragraph}}
+                </p>
+            </div>
+        <!-- Grid column -->
+
+        <hr class="w-100 clearfix d-lg-none d-md-block " />
+
+            <!-- Grid column -->
+            <div class="col-md-4 col-lg-2 col-xl-2 mx-auto mt-3 text-grey-2 d-md-block  d-none">
+                <h6 class=" mb-4 font-weight-bold">{{settings.group1_title}}</h6>
+                <p>
+                    <a href= {{settings.g1_link1}} class="footer-link" >{{settings.g1_link1_name}}</a>
+                </p>
+                <p>
+                    <a href= {{settings.g1_link2}} class="footer-link">{{settings.g1_link2_name}}</a>
+                </p>
+                <p>
+                    <a href= {{settings.g1_link3}} class="footer-link">{{settings.g1_link3_name}}</a>
+                </p>
+                <p>
+                    <a href= {{settings.g1_link4}} class="footer-link">{{settings.g1_link4_name}} </a>
+                </p>
+            </div>
+            <!-- Grid column -->
+
+        
+
+            <!-- Grid column -->
+            <div class="col-md-4 col-lg-2 col-xl-2 mx-auto mt-3 d-md-block d-none ">
+                <h6 class="mb-4 font-weight-bold">{{settings.group2_title}}</h6>
+                <p>
+                    <a href= {{settings.g2_link1}} class="footer-link">{{settings.g2_link1_name}}</a>
+                </p>
+                <p>
+                    <a href= {{settings.g2_link2}} class="footer-link">{{settings.g2_link2_name}}</a>
+                </p>
+                <p>
+                    <a href= {{settings.g2_link3}} class="footer-link">{{settings.g2_link3_name}}</a>
+                </p>
+                <p>
+                    <a href= {{settings.g2_link4}} class="footer-link">{{settings.g2_link4_name}}</a>
+                </p>
+            </div>
+            <!-- Grid column -->
+
+
+        <!-- Grid column -->
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                <h6 class="mb-4 font-weight-bold">Contact</h6>
+                <p><i class="fas fa-home mr-3"></i> {{settings.adress}}</p>
+                <p><i class="fas fa-envelope mr-3"></i> {{settings.mail}}</p>
+                <p><i class="fas fa-phone mr-3"></i> {{settings.phone}}</p>
+                <p><i class="fab fa-whatsapp mr-3"></i> {{settings.whatsapp}}</p>
+            </div>
+        <!-- Grid column -->
+        </div>
+        <!--Grid row-->
+    
+
+
+    <hr class="my-3 ">
+
+    <!-- Section: Copyright -->
+        <section >
+            <div class="row d-flex  pb-3">
+            <!-- Grid column -->
+                <div class="col-8 col-md-7 col-lg-8  text-start">
+                    <!-- Copyright -->
+                    
+                         © 2022 BallHead Tech.
+                  
+                    <!-- Copyright -->
+                </div>
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+                <div class="col-4 col-md-5 col-lg-4 ml-lg-0  text-end">
+                    <a class="ms-2 " href='{{settings.social_link1}}'><i class='{{settings.social_link1_icon}}'></i></a>
+                    <a class="ms-2 " href='{{settings.social_link2}}'><i class='{{settings.social_link2_icon}}'></i></a>
+                    <a class="ms-2 " href='{{settings.social_link3}}'><i class='{{settings.social_link3_icon}}'></i></a>
+                    <a class="ms-2 " href='{{settings.social_link4}}'><i class='{{settings.social_link4_icon}}'></i></a>
+                </div>
+                
+            <!-- Grid column -->
+            </div>
+        </section>
+    <!-- Section: Copyright -->
+    </div>
+</footer>
+<!-- Footer -->
+
+

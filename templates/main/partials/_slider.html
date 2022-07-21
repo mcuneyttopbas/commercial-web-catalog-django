@@ -1,0 +1,43 @@
+{% load static %}
+
+
+<!-- Main Slider -->
+<div class="swiper mySwiper">
+    <div class="container"></div>
+    <div class="swiper-wrapper main-wrapper">
+        <!-- Swiper Slider İtems -->
+        <div class="swiper-slide main-slide container">
+            <a href="www.youtube.com">
+                <img class="container" src="{% static 'img/sli.jpg' %}" alt="">
+                <div class="slider-info">
+                    <h2>Perfect Combination</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, aperiam.</p>
+                </div>
+            </a>
+        </div>
+        <div class="swiper-slide main-slide container">
+            <a href="www.google.com">
+                <img class="container" src="{% static 'img/sli2.jpg' %}" alt="">
+                <div class="slider-info">
+                    <h2>It's Not a Fabric</h2>
+                    <p>Rozetta Kalitesi ile evinize bambaşka bir hava katın bokunuz gibi gözükmesi</p>
+                </div>
+            </a>
+        </div>
+        <div class="swiper-slide main-slide container">
+            <a href="https://placehold.co/600x400">
+                <img class="container" src="{% static 'img/sli4.jpg' %}" alt="">
+                <div class="slider-info">
+                    <h2>Rolenda Series</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae enim assumenda iure distinctio deleniti ab aliquid itaque.</p>
+                </div>
+            </a>
+        </div>
+
+    </div>
+    <div class="container">
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+    </div>
+</div>
