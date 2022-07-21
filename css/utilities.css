@@ -1,0 +1,292 @@
+@import "main.css";
+
+
+
+/* Font Family Class Name */
+.text-ff-thin{
+    font-family: var(--ff-thin);
+}
+.text-ff-light{
+    font-family: var(--ff-light);
+}
+.text-ff-light-italic{
+    font-family: var(--ff-light-italic);
+}
+.text-ff-regular{
+    font-family: var(--ff-regular);
+}
+.text-ff-medium{
+    font-family: var(--ff-medium);
+}
+.text-ff-medium-italic{
+    font-family: var(--ff-medium-italic);
+}
+.text-ff-bold{
+    font-family: var(--ff-bold);
+}
+.text-ff-bold-italic{
+    font-family: var(--ff-bold-italic);
+}
+.text-ff-extrabold{
+    font-family: var(--ff-extrabold);
+}
+.text-ff-extrabold-italic{
+    font-family: var(--ff-extrabold-italic);
+}
+
+
+
+.font-italic {
+    font-style: italic;
+}
+
+.font-bold{
+    font-weight: bold;
+}
+
+/* Text Color Settings*/
+.text-bone{
+    color: var(--clr-bone);
+}
+.text-black-2{
+    color: var(--clr-black-2);
+}
+
+
+.text-grey-1 {
+    color: var(--clr-grey-1);
+}
+.text-grey-2 {
+    color: var(--clr-grey-2);
+}
+.text-grey-3 {
+    color: var(--clr-grey-3);
+}
+.text-grey-4 {
+    color: var(--clr-grey-4);
+}
+.text-grey-5 {
+    color: var(--clr-grey-5);
+}
+.text-grey-6 {
+    color: var(--clr-grey-6);
+}
+
+
+.text-bronze-1{
+    color: var(--clr-bronze-1);
+}
+.text-bronze-2{
+    color: var(--clr-bronze-2);
+}
+.text-bronze-3{
+    color: var(--clr-bronze-3);
+}
+.text-bronze-4{
+    color: var(--clr-bronze-4);
+}
+.text-bronze-5{
+    color: var(--clr-bronze-5);
+}
+.text-bronze-6{
+    color: var(--clr-bronze-6);
+}
+.text-bronze-7{
+    color: var(--clr-bronze-7);
+}
+.text-bronze-8{
+    color: var(--clr-bronze-8);
+}
+.text-bronze-9{
+    color: var(--clr-bronze-9);
+}
+
+
+.text-nblue-1{
+    color: var(--clr-navyBlue-1);
+}
+.text-nblue-2{
+    color: var(--clr-navyBlue-2);
+}
+.text-nblue-3{
+    color: var(--clr-navyBlue-3);
+}
+
+
+.text-anthracite-1{
+    color: var(--clr-anthracite-1);
+}
+.text-anthracite-2{
+    color: var(--clr-anthracite-2);
+}
+.text-anthracite-3{
+    color: var(--clr-anthracite-3);
+}
+
+
+.text-khaki-1{
+    color: var(--clr-khaki-1);
+}
+.text-khaki-2{
+    color: var(--clr-khaki-2);
+}
+.text-khaki-3{
+    color: var(--clr-khaki-3);
+}
+
+
+.text-dblue{
+    color: var(--clr-darkBlue-1);
+}
+
+/*Background Color Settings*/
+
+.bg-white{
+    background-color: var(--clr-white);
+}
+.bg-bone{
+    background-color: var(--clr-bone);
+}
+
+
+.bg-black-1 {
+    background-color: var(--clr-black-1);
+}
+.bg-black-2 {
+    background-color: var(--clr-black-2);
+}
+
+
+.bg-grey-1 {
+    background-color: var(--clr-grey-1);
+}
+.bg-grey-2 {
+    background-color: var(--clr-grey-2);
+}
+.bg-grey-3 {
+    background-color: var(--clr-grey-3);
+}
+.bg-grey-4 {
+    background-color: var(--clr-grey-4);
+}
+.bg-grey-5 {
+    background-color: var(--clr-grey-5);
+}
+.bg-grey-6 {
+    background-color: var(--clr-grey-6);
+}
+
+
+.bg-bronze-1 {
+    background-color: var(--clr-bronze-1);
+}
+.bg-bronze-2 {
+    background-color: var(--clr-bronze-2);
+}
+.bg-bronze-3 {
+    background-color: var(--clr-bronze-3);
+}
+.bg-bronze-4 {
+    background-color: var(--clr-bronze-4);
+}
+.bg-bronze-5 {
+    background-color: var(--clr-bronze-5);
+}
+.bg-bronze-6 {
+    background-color: var(--clr-bronze-6);
+}
+.bg-bronze-7 {
+    background-color: var(--clr-bronze-7);
+}
+.bg-bronze-8 {
+    background-color: var(--clr-bronze-8);
+}
+.bg-bronze-9 {
+    background-color: var(--clr-bronze-9);
+}
+
+
+.bg-nblue-1{
+    background-color: var(--clr-navyBlue-1);
+}
+.bg-nblue-2{
+    background-color: var(--clr-navyBlue-2);
+}
+.bg-nblue-3{
+    background-color: var(--clr-navyBlue-3);
+}
+
+
+.bg-anthracite-1{
+    background-color: var(--clr-anthracite-1);
+}
+.bg-anthracite-2{
+    background-color: var(--clr-anthracite-2);
+}
+.bg-anthracite-3{
+    background-color: var(--clr-anthracite-3);
+}
+.bg-anthracite-4{
+    background-color: var(--clr-anthracite-4);
+}
+.bg-anthracite-5{
+    background-color: var(--clr-anthracite-5);
+}
+
+
+.bg-khaki-1{
+    background-color: var(--clr-khaki-1);
+}
+.bg-khaki-2{
+    background-color: var(--clr-khaki-2);
+}
+.bg-khaki-3{
+    background-color: var(--clr-khaki-3);
+}
+
+
+.bg-dblue{
+    background-color: var(--clr-darkBlue-1);
+}
+
+
+/* ----------------
+BOOSTRAP OVERWRIDE
+------------------*/
+
+.border-none{
+    border: none;
+}
+
+.border-none:hover{
+    border: none;
+    box-shadow: none;
+}
+
+.border-none:enabled{
+    border: none;
+    box-shadow: none;
+}
+
+.bg-none{
+    background: none;
+}
+
+.form-control:enabled{
+    box-shadow: none;
+    border-color: var(--clr-grey-4);
+}
+
+.form-control:hover{
+    box-shadow: none;
+    border-color: var(--clr-black-4);
+}
+
+.btn:hover{
+    box-shadow: none;
+}
+
+.btn:enabled{
+    box-shadow: none;
+}
+
