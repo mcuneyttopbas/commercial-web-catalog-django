@@ -1,0 +1,756 @@
+/* --------
+FONT FAMILY 
+-----------*/
+@font-face {
+    font-family: 'renarte-thin';
+    src: url('../font/renarte-thin.woff2') format('woff2'),
+        url('../font/renarte-thin.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'renarte-light';
+    src: url('../font/renarte-light.woff2') format('woff2'),
+        url('../font/renarte-light.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'renarte-regular';
+    src: url('../font/renarte-regular.woff2') format('woff2'),
+        url('../font/renarte-regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'renarte-medium';
+    src: url('../font/renarte-medium.woff2') format('woff2'),
+        url('../font/renarte-medium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'renarte-bold';
+    src: url('../font/renarte-bold.woff2') format('woff2'),
+        url('../font/renarte-bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'renarte-extrabold';
+    src: url('../font/renarte-extrabold.woff2') format('woff2'),
+        url('../font/renarte-extrabold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* italic */
+@font-face {
+    font-family: 'renarte-light-italic';
+    src: url('../font/renarte-light-italic.woff2') format('woff2'),
+        url('../font/renarte-light-italic.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'renarte-medium-italic';
+    src: url('../font/renarte-medium-italic.woff2') format('woff2'),
+        url('../font/renarte-medium-italic.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'renarte-bold-italic';
+    src: url('../font/renarte-bold-italic.woff2') format('woff2'),
+        url('../font/renarte-bold-italic.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'renarte-extrabold-italic';
+    src: url('../font/renarte-extrabold-italic.woff2') format('woff2'),
+        url('../font/renarte-extrabold-italic.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
+/*------
+VARIBLES 
+--------*/
+
+:root{
+    /* Font Family  Varibles Name*/
+    --ff-thin: "renarte-thin", sans-serif;
+    --ff-light: "renarte-light", sans-serif;
+    --ff-light-italic: "renarte-light-italic", sans-serif;
+    --ff-regular: "renarte-regular", sans-serif;
+    --ff-medium: "renarte-medium", sans-serif;
+    --ff-medium-italic: "renarte-medium-italic", sans-serif;
+    --ff-bold: "renarte-bold", sans-serif;
+    --ff-bold-italic: "renarte-bold-italic", sans-serif;
+    --ff-extrabold: "renarte-extrabold", sans-serif;
+    --ff-extrabold-italic: "renarte-extrabold-italic", sans-serif;
+    /* Google Font */
+    --ff-ohbaby: 'Oooh Baby', sans-serif;
+
+
+    /* Colors */
+    /* Natural Color Shades*/
+    --clr-white   : #fff;
+    --clr-bone   : #e3dac9;
+
+    /*Black Color Shades*/
+    --clr-black-1   : #000;
+    --clr-black-2   : #111;
+
+    /*Grey Color Shades*/
+    --clr-grey-1    : #222;
+    --clr-grey-2    : #333;
+    --clr-grey-3    : #666;
+    --clr-grey-4    : #999;
+    --clr-grey-5    : #ccc;
+    --clr-grey-6    : #eee;
+    --clr-grey-7    : rgb(245, 245, 245);
+
+    /*Bronze Color Shades*/
+    --clr-bronze-1   : #352217;
+    --clr-bronze-2   : #4f3322;
+    --clr-bronze-3   : #6a442e;
+    --clr-bronze-4   : #85553a; /* Hisar Textile Brand Color*/
+    --clr-bronze-5   : #9d7661; 
+    --clr-bronze-6   : #b59988; 
+    --clr-bronze-7   : #cebbb0; 
+    --clr-bronze-8   : #e6ddd7; 
+    --clr-bronze-9   : #f2eeeb; 
+
+    /*Navy Blue Color Shades */
+    --clr-navyBlue-1 : #152238;
+    --clr-navyBlue-2 : #1c2e4a;
+    --clr-navyBlue-3 : #23395d;
+
+    /*Antracite Color Shades*/
+    --clr-anthracite-1  : #494a4d;
+    --clr-anthracite-2  : #626367;
+    --clr-anthracite-3  : #7b7c81; /* Renarte Catalog Color*/
+    --clr-anthracite-4  : #95969a;
+    --clr-anthracite-5  : #afb0b3;
+
+    /*Khaki Color Shades*/
+    --clr-khaki-1 : #485b38;
+    --clr-khaki-2 : #5a7247;
+    --clr-khaki-3 : #7a8e6b;
+
+    /* Other Colors */
+    --clr-darkBlue-1 : #00008b;
+
+    /* Radius */
+    --brd-radius-1  :   10px;
+
+    /* Shadow */
+    --shd-primary-1 :   -2px -2px 6px rgba(0,0,0,0.5), 2px 2px 6px rgba(0,0,0,0.5);
+    --shd-primary-2 :   0px 0px 103px rgba(0, 0, 0, 0.73);
+    --shd-primary-3 :   rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+}
+
+/*-----------
+GENERAL CSS 
+-------------*/
+
+*{
+    color: var(--clr-grey-2);
+    font-family: var(--ff-regular);
+}
+
+.product-page-title{
+    text-transform: uppercase;
+}
+
+/*-----------
+BREADCRUMB
+-----------*/
+
+.breadcrumb-nav{
+    color: var(--clr-grey-5);
+}
+
+.breadcrumb-item{
+    color: var(--clr-grey-5);
+}
+
+.breadcrumb-item+.breadcrumb-item::before{
+    color: var(--clr-grey-5);
+}
+
+.breadcrumb-item a{
+    color: var(--clr-grey-5);
+    text-decoration: none;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in-out;
+}
+
+.breadcrumb-item a:hover{
+    color: var(--clr-grey-2);
+}
+
+/*---------
+UPDATE NEWS 
+-----------*/
+
+.update-link{
+    cursor: pointer;
+    transition: 0.3s;
+    color: var(--clr-white);
+    text-decoration: none;
+    
+}
+
+.update-link:hover{
+    color: var(--clr-grey-4);
+    text-decoration: none;
+}
+
+.update-news{
+    text-align: center;
+    background-color: var(--clr-grey-2); /* değişken ile renk değiştirilecek */
+    padding-top: 5px;
+    padding-bottom: 5px;
+    align-items: center;
+}
+
+
+
+/*--------
+NAVBAR
+---------*/
+
+/* Animation class name "header.sticky" */
+
+/* Top Navbar */
+.navbar-toggler{
+    border: none;
+}
+
+.navbar-toggler:hover{
+    box-shadow: none;
+}
+
+.navbar-toggler:enabled{
+    box-shadow: none;
+}
+
+.nav-top {
+    padding: 0;
+    background-color: var(--clr-grey-6);
+}
+
+.align-item-center {
+    align-items: center;
+}
+
+.top-nav-link{
+    cursor: pointer;
+    transition-duration: 00.3s;
+    color: var(--clr-grey-2);
+    text-decoration: none;
+}
+
+.top-nav-link:hover{
+    color: var(--clr-bronze-4);
+    text-decoration: none;
+}
+
+/* Searchbar */
+.nav-search{
+    width: 100%;
+    padding: 0.5rem;
+}
+
+
+
+/* Bottom Navbar */
+
+/* Logo */
+.navbar-logo{
+    width: auto;
+    height:18px;
+    cursor: pointer;   
+    padding-left: 0.5rem;
+}
+    
+.nav-bottom {
+    background-color: var(--clr-grey-6);
+}
+
+@media (min-width: 768px) {
+    .nav-search{
+        width: 350px;
+    }
+
+    .nav-bottom {
+        background-color: var(--clr-white);
+    }
+
+    .navbar-logo{
+        width: auto;
+        height:30px;
+        cursor: pointer;   
+        padding-left: 0.5rem;
+        transition: 0.05s;
+        transition-timing-function: ease-in-out;
+    }
+
+    .navbar-ani{
+        padding: 30px 0;
+        transition: 0.05s;
+        transition-timing-function: ease-in-out;
+    }
+
+    header.sticky .navbar-ani{
+        padding: 8px 0;
+    }
+    
+    header.sticky>nav>div .navbar-logo{
+        height:25px;
+    }
+}
+
+
+
+.btn-outline-grey-1{
+    border-color: var(--clr-grey-4);
+}
+
+.btn-outline-grey-1:hover{
+    background-color: var(--clr-grey-2);
+    border-color: var(--clr-grey-2);
+   
+}
+
+.btn-outline-grey-1:hover>i{
+    color: var(--clr-grey-5);
+}
+
+/*-------------
+MAIN SLIDER
+-------------*/
+
+.main-wrapper{
+    align-items: center;
+}
+
+.main-slide{
+    overflow: hidden;
+    padding: 0;
+}
+
+.main-slide a img{
+    padding: 0;
+}
+
+/* Slider Button */
+.swiper-button-next{
+    color: var(--clr-white);
+}
+
+.swiper-button-prev{
+    color: var(--clr-white);
+}
+
+.swiper-pagination-bullet-active{
+    background-color: var(--clr-white);
+    transform: scale(1.1);
+}
+
+.slider-info{
+    position: absolute;
+    bottom: 0;    
+    width: 100%;
+    text-align: justify;   
+    padding: 0 40px 25px 40px;
+    margin: 0 3px 0 3px;
+}
+
+.slider-info h2 {
+    font-weight: bolder;
+    letter-spacing: 2px;
+    color: var(--clr-white);
+    text-shadow: var(--shd-primary-1);
+    line-height: 22px;
+}
+
+.slider-info p {
+    color: var(--clr-white);
+    text-shadow: var(--shd-primary-1);
+    line-height: 20px;
+    font-size: 16px;
+} 
+
+/*small devices (sm) */
+@media (min-width: 576px) {
+    .main-slide{        
+        max-width: 800px;
+        max-height: 560px;
+    }
+    
+    .main-slide a img{
+        max-width: 800px;
+        max-height: 560px;
+    }
+
+    /* Slider Text */
+    .slider-info{
+        padding: 0 50px 40px 50px;
+    }
+
+    .slider-info h2 {
+        letter-spacing: 2.2px;
+        font-size: 35px;
+        line-height: 30px;
+    }
+    
+    .slider-info p {
+        font-size: 20px;
+        line-height: 23px;
+    } 
+} 
+
+/*medium devices (md) */
+@media (min-width: 768px) {
+    .main-slide{       
+        margin-top: 20px;
+        border-radius: var(--brd-radius-1);        
+    }
+    
+    .main-slide a img{
+        border-radius: var(--brd-radius-1);
+        transition-property: all;
+        transition-timing-function: ease-in-out;
+        transition-duration: .4s;
+    }
+
+    .main-slide a:hover img{ /* Aktif olan büyüsün istiyorsan : .swiper-slide-active */
+        transform: scale(1.1);
+        
+        
+    }
+
+    /* Slider Text */
+    .slider-info{
+        padding: 0 50px 40px 50px;
+    }
+
+    .slider-info h2 {
+        letter-spacing: 2.5px;
+        font-size: 35px;
+        line-height: 35px;
+    }
+    
+    .slider-info p {
+        font-size: 20px;
+    } 
+
+    /* Slider Button */
+    .swiper-button-next{
+        color: var(--clr-white);
+        margin-right: 15px;
+    }
+    .swiper-button-prev{
+        color: var(--clr-white);
+        margin-left: 15px;
+    }
+}
+
+/*----------------
+NEWS SLIDER BANNER
+------------------*/
+
+.news-header h5{
+    margin-bottom: 12px;
+}
+
+.news-header h5 a{
+    text-decoration: none;
+    color: var(--clr-grey-4);
+}
+
+.news-header h5 a:hover{
+    color: var(--clr-grey-2);
+}
+
+.news-slide{
+    height: auto;
+    overflow: hidden;
+    padding: 0;
+}
+
+.news-card{
+    height: 100%;
+    overflow: hidden;
+    border-radius: var(--brd-radius-1);
+    background-color: var(--clr-grey-6);
+    box-sizing: border-box;
+    height: 100% !important;
+    
+}
+
+.news-image img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.news-card a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: transparent;  
+}
+
+.news-info{
+    padding: 16px 16px 8px 16px;
+    display: flex;
+    text-align: center;
+}
+
+/* Pagination Custimize */
+
+.newsSwiper .swiper-pagination{
+    position: relative;
+    margin: 20px 0px 0px 0px;
+}
+
+.newsSwiper .swiper-pagination-bullet-active{
+    background-color: var(--clr-grey-2);
+    transform: scale(1.1);
+}
+
+/*----------------
+CATEGORİES BANNER
+-----------------*/
+
+.ctgr-banner{
+    position: relative;
+    border-radius: var(--brd-radius-1);
+    overflow: hidden;
+}
+
+.ctgr-banner img{
+    width: 100%;  
+}
+
+.ctgr-info{
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    text-align: justify;
+    padding: 0 35px 25px 35px;
+}
+
+.ctgr-info h5 {
+    color: white;
+    text-shadow: var(--shd-primary-1);
+    font-weight: bold;
+    
+}
+
+.ctgr-banner a{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: transparent;  
+}
+
+.ctgr-row{
+    padding: 7px;
+}
+
+.ctgr-row>div{
+    padding: 7px;
+}
+
+/*small devices (sm) */
+@media (min-width: 576px) {
+    .ctgr-row{
+        padding: 0;
+    }
+
+    .ctgr-info h5 {
+        font-size: 22px;        
+    }
+}
+
+/*medium devices (md) */
+@media (min-width: 768px) {
+
+    .ctgr-banner img{
+        transition-timing-function: ease-in-out;
+        transition-duration: .4s;
+    }
+
+    .ctgr-banner:hover img{
+        transform: scale(1.2);
+    }
+
+    .ctgr-info h5 {
+        font-size: 25px;        
+    }
+}
+
+/*-------------
+CONTRACT BANNER
+---------------*/
+
+.cnt-row{
+    border-radius: var(--brd-radius-1);
+    overflow: hidden;
+    margin: 12px 0px;
+}
+
+.cnt p{
+    padding: 0px 12px;
+}
+
+.cnt-img{
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    padding: 0;
+}
+
+.cnt-img>img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+
+.cnt-info{
+    background-color: var(--clr-grey-6);
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 30px;
+}
+
+.cnt-info>div>div{
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+    
+}
+
+.cnt-info h3{
+    width: 100%;
+    font-weight: bold;
+    color: var(--clr-bronze-4);
+}
+
+.cnt-info p{
+    width: 100%;
+}
+
+.abtn-outline{
+    text-decoration: none;
+    color: var(--clr-grey-3);
+    padding: 5px 9px;
+    border-style: solid;
+    border-radius: 5px;
+    border-width: 1.5px;
+    transition-duration: 30ms;
+    transition-timing-function: ease-in-out;
+    transition-property: all;
+
+}
+
+.abtn-outline:hover{
+    color: var(--clr-grey-6);
+    background-color: var(--clr-bronze-4);
+}
+
+.abtn{
+    text-decoration: none;
+    color: var(--clr-grey-3);
+}
+
+.abtn:hover{
+    color: var(--clr-bronze-4);
+}
+
+/*small devices (sm) */
+@media (min-width: 576px) {
+    .cnt-row{
+        margin: 0;
+    }
+
+    .cnt-p{
+        padding: 0px 7px;
+    }
+}
+
+/*extra large devices (xl) */
+@media (min-width: 1400px) {
+    .cnt-info{
+        padding: 30px 30px 30px 50px;
+    }
+
+    .cnt-info>div>div{
+        width: 80%;
+    }
+    
+    .cnt-info h3{
+        width: 50%;
+    }
+    
+    .cnt-info hr{
+        width: 75%;
+    }
+    
+    .cnt-info p{
+        width: 85%;
+    }
+}
+
+/* --------
+FOOTER
+----------*/
+footer {
+    font-family: var(--ff-regular);
+    margin-top: 20px;
+}
+
+.footer-link {
+    color: var(--clr-grey-2);
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.footer-link:hover{
+    color: var(--clr-grey-4);
+}
+
+.footer-logo{
+    width: auto;
+    height:18px;
+    cursor: pointer;   
+    padding-left: 0.5rem;
+}
+
+
+
+
