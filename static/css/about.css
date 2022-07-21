@@ -7,39 +7,40 @@ ABOUT JUMBOTRON
     background-position: center;
     height: 400px;
     display: flex;
-    
 }
 
-.about-jumbotron div{
+.about-jumbotron div {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.about-jumbotron div h2{
+.about-jumbotron div h2 {
     color: var(--clr-white);
     text-transform: uppercase;
     letter-spacing: 6px;
     text-shadow: var(--shd-primary-1);
-    
 }
 
+
 /*medium devices (md) */
+
 @media (min-width: 768px) {
-    .about-jumbotron div br{
+    .about-jumbotron div br {
         display: none;
     }
 }
+
 
 /*---------
 ABOUT TİTLE
 -----------*/
 
-.abo-title{
+.abo-title {
     text-align: center;
 }
 
-.abo-title h1{
+.abo-title h1 {
     width: 100%;
     font-weight: bold;
     color: var(--clr-bronze-4);
@@ -50,16 +51,16 @@ ABOUT TİTLE
 OUR HİSTORY 
 --------------*/
 
-.abo-row{
+.abo-row {
     padding: 12px;
     overflow: hidden;
 }
 
-.abo p{
+.abo p {
     padding: 0px 12px;
 }
 
-.abo-img{
+.abo-img {
     border-radius: var(--brd-radius-1);
     display: flex;
     position: relative;
@@ -67,16 +68,14 @@ OUR HİSTORY
     padding: 0;
 }
 
-.abo-img>img{
+.abo-img>img {
     height: 100%;
     width: 100%;
     object-fit: cover;
     display: block;
-   
 }
 
-
-.abo-info{
+.abo-info {
     position: relative;
     display: flex;
     align-items: center;
@@ -85,45 +84,46 @@ OUR HİSTORY
     text-align: left;
 }
 
-.abo-info-right{
+.abo-info-right {
     text-align: left;
 }
 
-
-.abo-info h1{
+.abo-info h1 {
     width: 100%;
     font-weight: bold;
     color: var(--clr-bronze-4);
 }
 
-.abo-info p{
+.abo-info p {
     width: 100%;
 }
 
+
 /*small devices (sm) */
+
 @media (min-width: 576px) {
-    .abo-row{
+    .abo-row {
         padding: 0;
     }
-
-    .abo-p{
+    .abo-p {
         padding: 0px 7px;
     }
 }
 
+
 /* large devices (lg) */
+
 @media (min-width: 992px) {
-    .abo-info-right{
+    .abo-info-right {
         text-align: right !important;
     }
-
-    .abo-info{
+    .abo-info {
         padding: 50px;
         margin-top: 0;
     }
 }
 
+
 /*extra large devices (xl) */
-@media (min-width: 1400px) {
-    
-}
+
+@media (min-width: 1400px) {}
